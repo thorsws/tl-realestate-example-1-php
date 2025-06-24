@@ -274,7 +274,7 @@ namespace App\MongoDB;
 class ObjectId {
     private string $id;
     
-    public function __construct(string $id = null) {
+    public function __construct(?string $id = null) {
         $this->id = $id ?: uniqid('', true);
     }
     
@@ -286,7 +286,7 @@ class ObjectId {
 class UTCDateTime {
     private int $milliseconds;
     
-    public function __construct(int $milliseconds = null) {
+    public function __construct(?int $milliseconds = null) {
         $this->milliseconds = $milliseconds ?: (time() * 1000);
     }
     
@@ -304,9 +304,17 @@ use App\MongoDB\AtlasClient;
 use App\MongoDB\AtlasDatabase;
 use App\MongoDB\AtlasCollection;
 
-class Client extends AtlasClient {}
-class Database extends AtlasDatabase {}
-class Collection extends AtlasCollection {}
+if (!class_exists('MongoDB\Client')) {
+    class Client extends AtlasClient {}
+}
+
+if (!class_exists('MongoDB\Database')) {
+    class Database extends AtlasDatabase {}
+}
+
+if (!class_exists('MongoDB\Collection')) {
+    class Collection extends AtlasCollection {}
+}
 
 // BSON compatibility
 namespace MongoDB\BSON;
@@ -314,5 +322,10 @@ namespace MongoDB\BSON;
 use App\MongoDB\ObjectId as AppObjectId;
 use App\MongoDB\UTCDateTime as AppUTCDateTime;
 
-class ObjectId extends AppObjectId {}
-class UTCDateTime extends AppUTCDateTime {}
+if (!class_exists('MongoDB\BSON\ObjectId')) {
+    class ObjectId extends AppObjectId {}
+}
+
+if (!class_exists('MongoDB\BSON\UTCDateTime')) {
+    class UTCDateTime extends AppUTCDateTime {}
+}
