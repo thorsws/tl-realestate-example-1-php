@@ -8,8 +8,11 @@ use App\Controllers\ListingController;
 use App\Controllers\MortgageController;
 use App\Controllers\OfferController;
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/..');
-$dotenv->load();
+// Load .env file only if it exists (for local development)
+if (file_exists(__DIR__ . '/../.env')) {
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/..');
+    $dotenv->load();
+}
 
 session_start();
 

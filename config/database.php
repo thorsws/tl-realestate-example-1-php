@@ -11,23 +11,29 @@ class Database {
     private string $mode;
     
     private function __construct() {
-        $this->mode = $_ENV['STORAGE_MODE'] ?? 'session';
+        $this->mode = $_ENV['STORAGE_MODE'] ?? $_SERVER['STORAGE_MODE'] ?? 'session';
         
         try {
             if ($this->mode === 'mongodb' && extension_loaded('mongodb')) {
                 // Use real MongoDB
-                $this->client = new Client($_ENV['MONGODB_URI'] ?? 'mongodb://localhost:27017');
-                $this->database = $this->client->selectDatabase($_ENV['MONGODB_DATABASE'] ?? 'real_estate_demo');
+                $mongoUri = $_ENV['MONGODB_URI'] ?? $_SERVER['MONGODB_URI'] ?? 'mongodb://localhost:27017';
+                $mongoDb = $_ENV['MONGODB_DATABASE'] ?? $_SERVER['MONGODB_DATABASE'] ?? 'real_estate_demo';
+                $this->client = new Client($mongoUri);
+                $this->database = $this->client->selectDatabase($mongoDb);
             } else {
                 // Use session-based storage
-                $this->client = new AtlasClient($_ENV['MONGODB_URI'] ?? '');
-                $this->database = $this->client->selectDatabase($_ENV['MONGODB_DATABASE'] ?? 'real_estate_demo');
+                $mongoUri = $_ENV['MONGODB_URI'] ?? $_SERVER['MONGODB_URI'] ?? '';
+                $mongoDb = $_ENV['MONGODB_DATABASE'] ?? $_SERVER['MONGODB_DATABASE'] ?? 'real_estate_demo';
+                $this->client = new AtlasClient($mongoUri);
+                $this->database = $this->client->selectDatabase($mongoDb);
             }
         } catch (\Exception $e) {
             // Fallback to session storage if MongoDB fails
             $this->mode = 'session';
-            $this->client = new AtlasClient($_ENV['MONGODB_URI'] ?? '');
-            $this->database = $this->client->selectDatabase($_ENV['MONGODB_DATABASE'] ?? 'real_estate_demo');
+            $mongoUri = $_ENV['MONGODB_URI'] ?? $_SERVER['MONGODB_URI'] ?? '';
+            $mongoDb = $_ENV['MONGODB_DATABASE'] ?? $_SERVER['MONGODB_DATABASE'] ?? 'real_estate_demo';
+            $this->client = new AtlasClient($mongoUri);
+            $this->database = $this->client->selectDatabase($mongoDb);
         }
     }
     
