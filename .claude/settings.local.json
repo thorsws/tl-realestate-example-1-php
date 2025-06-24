@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(cp:*)",
+      "Bash(brew list:*)",
+      "Bash(pecl:*)",
+      "Bash(composer install:*)",
+      "Bash(curl:*)",
+      "Bash(kill:*)",
+      "Bash(composer:*)",
+      "Bash(php:*)",
+      "Bash(brew install:*)"
+    ],
+    "deny": []
+  }
+}

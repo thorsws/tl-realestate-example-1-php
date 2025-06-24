@@ -1,0 +1,252 @@
+[
+    {
+        "listing_id": "L001",
+        "address": {
+            "street": "123 Main Street",
+            "city": "Austin",
+            "state": "TX",
+            "zip": "78701"
+        },
+        "price": 450000,
+        "beds": 3,
+        "baths": 2,
+        "sqft": 1800,
+        "lot_size": 0.25,
+        "year_built": 2015,
+        "property_type": "Single Family",
+        "description": "Charming modern home in the heart of downtown Austin. Walking distance to restaurants and entertainment. Updated kitchen with stainless steel appliances.",
+        "photos": [
+            "https://placehold.co/800x600/4A90E2/ffffff?text=Modern+Home+Front",
+            "https://placehold.co/800x600/7B68EE/ffffff?text=Living+Room",
+            "https://placehold.co/800x600/9370DB/ffffff?text=Kitchen"
+        ],
+        "features": ["Granite Countertops", "Hardwood Floors", "Central Air", "Garage"],
+        "status": "Active",
+        "listed_date": "2025-06-01"
+    },
+    {
+        "listing_id": "L002",
+        "address": {
+            "street": "456 Oak Avenue",
+            "city": "Austin",
+            "state": "TX",
+            "zip": "78704"
+        },
+        "price": 625000,
+        "beds": 4,
+        "baths": 3,
+        "sqft": 2400,
+        "lot_size": 0.35,
+        "year_built": 2018,
+        "property_type": "Single Family",
+        "description": "Stunning two-story home in South Austin. Open floor plan with high ceilings. Master suite on main floor. Beautiful backyard with mature trees.",
+        "photos": [
+            "https://placehold.co/800x600/5F9EA0/ffffff?text=Two+Story+Home",
+            "https://placehold.co/800x600/4682B4/ffffff?text=Open+Kitchen",
+            "https://placehold.co/800x600/6495ED/ffffff?text=Master+Bedroom"
+        ],
+        "features": ["Pool", "Two-Story", "Walk-in Closet", "Home Office"],
+        "status": "Active",
+        "listed_date": "2025-06-10"
+    },
+    {
+        "listing_id": "L003",
+        "address": {
+            "street": "789 Elm Court",
+            "city": "Round Rock",
+            "state": "TX",
+            "zip": "78664"
+        },
+        "price": 385000,
+        "beds": 3,
+        "baths": 2.5,
+        "sqft": 2100,
+        "lot_size": 0.18,
+        "year_built": 2020,
+        "property_type": "Single Family",
+        "description": "New construction in family-friendly neighborhood. Great schools nearby. Energy efficient with solar panels. Community pool and playground.",
+        "photos": [
+            "https://placehold.co/800x600/FF6347/ffffff?text=New+Construction",
+            "https://placehold.co/800x600/FF7F50/ffffff?text=Modern+Kitchen",
+            "https://placehold.co/800x600/FF8C00/ffffff?text=Backyard"
+        ],
+        "features": ["Solar Panels", "Smart Home", "Community Pool", "Energy Efficient"],
+        "status": "Active",
+        "listed_date": "2025-06-15"
+    },
+    {
+        "listing_id": "L004",
+        "address": {
+            "street": "321 Pine Street",
+            "city": "Cedar Park",
+            "state": "TX",
+            "zip": "78613"
+        },
+        "price": 425000,
+        "beds": 4,
+        "baths": 2.5,
+        "sqft": 2200,
+        "lot_size": 0.22,
+        "year_built": 2016,
+        "property_type": "Single Family",
+        "description": "Beautiful home in quiet cul-de-sac. Large game room upstairs. Covered patio perfect for entertaining. Near shopping and dining.",
+        "photos": [
+            "https://placehold.co/800x600/32CD32/ffffff?text=Cul-de-sac+Home",
+            "https://placehold.co/800x600/3CB371/ffffff?text=Game+Room",
+            "https://placehold.co/800x600/2E8B57/ffffff?text=Covered+Patio"
+        ],
+        "features": ["Game Room", "Covered Patio", "Cul-de-sac", "Storage"],
+        "status": "Active",
+        "listed_date": "2025-06-05"
+    },
+    {
+        "listing_id": "L005",
+        "address": {
+            "street": "555 River Road",
+            "city": "Austin",
+            "state": "TX",
+            "zip": "78745"
+        },
+        "price": 525000,
+        "beds": 3,
+        "baths": 2,
+        "sqft": 1650,
+        "lot_size": 0.15,
+        "year_built": 2019,
+        "property_type": "Single Family",
+        "description": "Contemporary design with open concept living. Premium finishes throughout. Private backyard with deck. Close to downtown.",
+        "photos": [
+            "https://placehold.co/800x600/DC143C/ffffff?text=Contemporary+Home",
+            "https://placehold.co/800x600/FF1493/ffffff?text=Open+Living",
+            "https://placehold.co/800x600/C71585/ffffff?text=Modern+Bath"
+        ],
+        "features": ["Open Concept", "Premium Finishes", "Deck", "Modern Design"],
+        "status": "Active",
+        "listed_date": "2025-06-20"
+    },
+    {
+        "listing_id": "L006",
+        "address": {
+            "street": "999 Hillside Drive",
+            "city": "Pflugerville",
+            "state": "TX",
+            "zip": "78660"
+        },
+        "price": 350000,
+        "beds": 3,
+        "baths": 2,
+        "sqft": 1500,
+        "lot_size": 0.12,
+        "year_built": 2014,
+        "property_type": "Single Family",
+        "description": "Affordable home in growing area. Well-maintained with recent updates. Great starter home. Easy access to major highways.",
+        "photos": [
+            "https://placehold.co/800x600/4B0082/ffffff?text=Starter+Home",
+            "https://placehold.co/800x600/8B008B/ffffff?text=Updated+Kitchen",
+            "https://placehold.co/800x600/9932CC/ffffff?text=Bedroom"
+        ],
+        "features": ["Updated Kitchen", "New Paint", "Fenced Yard", "Storage Shed"],
+        "status": "Active",
+        "listed_date": "2025-06-12"
+    },
+    {
+        "listing_id": "L007",
+        "address": {
+            "street": "777 Sunset Boulevard",
+            "city": "Lakeway",
+            "state": "TX",
+            "zip": "78734"
+        },
+        "price": 850000,
+        "beds": 5,
+        "baths": 4,
+        "sqft": 3500,
+        "lot_size": 0.5,
+        "year_built": 2021,
+        "property_type": "Single Family",
+        "description": "Luxury home with hill country views. Gourmet kitchen, wine room, and home theater. Resort-style pool and outdoor kitchen.",
+        "photos": [
+            "https://placehold.co/800x600/FF4500/ffffff?text=Luxury+Estate",
+            "https://placehold.co/800x600/FF6347/ffffff?text=Gourmet+Kitchen",
+            "https://placehold.co/800x600/FF7F50/ffffff?text=Pool+Area"
+        ],
+        "features": ["Hill Country Views", "Wine Room", "Home Theater", "Pool & Spa"],
+        "status": "Active",
+        "listed_date": "2025-06-08"
+    },
+    {
+        "listing_id": "L008",
+        "address": {
+            "street": "222 Cedar Lane",
+            "city": "Georgetown",
+            "state": "TX",
+            "zip": "78626"
+        },
+        "price": 410000,
+        "beds": 4,
+        "baths": 2.5,
+        "sqft": 2000,
+        "lot_size": 0.2,
+        "year_built": 2017,
+        "property_type": "Single Family",
+        "description": "Family home in established neighborhood. Large backyard with play area. Walking distance to elementary school. Quiet street.",
+        "photos": [
+            "https://placehold.co/800x600/008080/ffffff?text=Family+Home",
+            "https://placehold.co/800x600/20B2AA/ffffff?text=Spacious+Living",
+            "https://placehold.co/800x600/48D1CC/ffffff?text=Kids+Room"
+        ],
+        "features": ["Near Schools", "Large Backyard", "Play Area", "Walking Trails"],
+        "status": "Active",
+        "listed_date": "2025-06-18"
+    },
+    {
+        "listing_id": "L009",
+        "address": {
+            "street": "888 Park Place",
+            "city": "Austin",
+            "state": "TX",
+            "zip": "78758"
+        },
+        "price": 475000,
+        "beds": 3,
+        "baths": 2.5,
+        "sqft": 1900,
+        "lot_size": 0.16,
+        "year_built": 2022,
+        "property_type": "Townhouse",
+        "description": "Modern townhome in North Austin. Low maintenance living. Rooftop deck with city views. Walking distance to Domain shopping.",
+        "photos": [
+            "https://placehold.co/800x600/B22222/ffffff?text=Modern+Townhome",
+            "https://placehold.co/800x600/8B0000/ffffff?text=Rooftop+Deck",
+            "https://placehold.co/800x600/A52A2A/ffffff?text=Open+Floor+Plan"
+        ],
+        "features": ["Rooftop Deck", "City Views", "Low Maintenance", "Near Shopping"],
+        "status": "Active",
+        "listed_date": "2025-06-22"
+    },
+    {
+        "listing_id": "L010",
+        "address": {
+            "street": "444 Ranch Road",
+            "city": "Dripping Springs",
+            "state": "TX",
+            "zip": "78620"
+        },
+        "price": 725000,
+        "beds": 4,
+        "baths": 3.5,
+        "sqft": 2800,
+        "lot_size": 1.0,
+        "year_built": 2020,
+        "property_type": "Single Family",
+        "description": "Hill country retreat on 1 acre. Custom built with attention to detail. Workshop/barn on property. Peaceful setting with wildlife.",
+        "photos": [
+            "https://placehold.co/800x600/DAA520/ffffff?text=Hill+Country+Home",
+            "https://placehold.co/800x600/B8860B/ffffff?text=Custom+Kitchen",
+            "https://placehold.co/800x600/CD853F/ffffff?text=Workshop"
+        ],
+        "features": ["1 Acre Lot", "Workshop/Barn", "Custom Built", "Hill Country"],
+        "status": "Active",
+        "listed_date": "2025-06-14"
+    }
+]

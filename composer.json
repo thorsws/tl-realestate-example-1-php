@@ -1,0 +1,19 @@
+{
+    "name": "realestate/mortgage-demo",
+    "description": "Real Estate and Mortgage Demo Application",
+    "type": "project",
+    "require": {
+        "php": "^8.0",
+        "mongodb/mongodb": "^1.16",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "App\\Config\\": "config/"
+        }
+    },
+    "scripts": {
+        "start": "php -S localhost:8000 -t public"
+    }
+}
