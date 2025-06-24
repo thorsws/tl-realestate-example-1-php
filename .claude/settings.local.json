@@ -10,7 +10,8 @@
       "Bash(kill:*)",
       "Bash(composer:*)",
       "Bash(php:*)",
-      "Bash(brew install:*)"
+      "Bash(brew install:*)",
+      "Bash(ls:*)"
     ],
     "deny": []
   }

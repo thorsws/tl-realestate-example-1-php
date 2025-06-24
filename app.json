@@ -1,0 +1,29 @@
+{
+  "name": "Real Estate & Mortgage Demo",
+  "description": "A PHP application for browsing properties and getting mortgage pre-approval",
+  "keywords": ["php", "real-estate", "mortgage", "demo"],
+  "website": "https://github.com/yourusername/real-estate",
+  "repository": "https://github.com/yourusername/real-estate",
+  "success_url": "/",
+  "env": {
+    "STORAGE_MODE": {
+      "description": "Storage mode: 'session' for browser-based or 'mongodb' for database",
+      "value": "session"
+    },
+    "APP_NAME": {
+      "description": "Application name",
+      "value": "Real Estate & Mortgage Demo"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    }
+  ]
+}
