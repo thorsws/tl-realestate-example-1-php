@@ -47,7 +47,13 @@
                     
                     <div>
                         <strong>Pre-Approval Date:</strong><br>
-                        <?= date('F j, Y', $preApproval['created_at']->toDateTime()->getTimestamp()) ?>
+                        <?php 
+                            if (is_object($preApproval['created_at']) && method_exists($preApproval['created_at'], 'toDateTime')) {
+                                echo date('F j, Y', $preApproval['created_at']->toDateTime()->getTimestamp());
+                            } else {
+                                echo date('F j, Y');
+                            }
+                        ?>
                     </div>
                 </div>
             </div>
