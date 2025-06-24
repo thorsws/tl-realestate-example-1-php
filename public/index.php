@@ -1,6 +1,10 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
+// Enable error reporting for debugging
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 // Load MongoDB compatibility classes before session_start()
 require_once __DIR__ . '/../src/MongoDB/AtlasClient.php';
 
@@ -13,6 +17,12 @@ if (file_exists(__DIR__ . '/../.env')) {
     $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/..');
     $dotenv->load();
 }
+
+// Debug logging
+error_log("PHP Version: " . PHP_VERSION);
+error_log("Working Directory: " . getcwd());
+error_log("Autoload file exists: " . (file_exists(__DIR__ . '/../vendor/autoload.php') ? 'yes' : 'no'));
+error_log("Database.php exists: " . (file_exists(__DIR__ . '/../config/database.php') ? 'yes' : 'no'));
 
 session_start();
 
